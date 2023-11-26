@@ -1,0 +1,23 @@
+ // Fetching from the db
+                    $sql = "SELECT * FROM `notes`";
+                    $result = mysqli_query($conn, $sql);
+                    $num = mysqli_num_rows($result);
+                    $id=0;
+                    $sno=1;
+                    if($num>0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            $dis_title = $row['title'];
+                            $dis_desc = $row['content'];
+                            $id = $row['sno'];
+                            echo '<div class="notes">
+                                    <h3>'. $sno. ". " . $dis_title .'</h3>
+                                    <p>'. substr($dis_desc,0,100). '<a class="more_link" href="index.php?more_id='. $id .'">...more</a>' .'</p>
+                                    <a href="index.php?id='. $id .'"><button class="buttons">Delete Note</button></a>
+                                </div>';
+                            $sno++;
+                        }
+                            // echo "This is the div for pagination";
+                    }
+                    else{
+                        echo "Nothing to show";
+                    }

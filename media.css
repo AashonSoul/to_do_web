@@ -1,0 +1,186 @@
+* {
+    overflow-x: hidden;
+}
+.notifications{
+    width: 59vw;
+    padding: 22px;
+}
+.buttons{
+    width: 11vw;
+}
+.popup{
+    width: 66vw;
+}
+.popup_btn button {
+    width: 11vw;
+}
+.inputs input {
+    width: 40vw;
+}
+.li{
+    padding: 0 1rem;
+}
+nav ul{
+    font-size: 15px;
+}
+.notes{
+    width: 24vw;
+}
+#pagination button{
+    width: 5vw;
+}
+#pagination {
+    width: 38vw;
+}
+.sign_log{
+    height: 2vh;
+    padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .notes{
+        width: 27vw;
+    }
+    body {
+      background-color: lightblue;
+    }
+    .li{
+        padding: 0 1rem;
+    }
+    nav ul{
+        font-size: 15px;
+    }
+    .popup_btn button {
+        width: 17vw;
+    }
+    .popup{
+        width: 76vw;
+    }
+    .buttons{
+        width: 15vw;
+    }
+    .sign_log{
+        padding: 9px;
+        overflow: hidden;
+    }
+    #pagination{
+        width: 50vw;
+    }
+    #pagination  button{
+        width: 7vw;
+    }
+}
+@media only screen and (max-width: 532px) {
+    body {
+      background-color: red;
+    }
+    .sign_log{
+        width: 10vw;
+        height: 2vh;
+        padding: 6px;
+        overflow: hidden;
+    }
+    .notes {
+        width: 25vw;
+        height: 39vh;
+    }
+    .icon{
+        width: -1;
+    }
+    footer{
+        font-size: 14px;
+    }
+    #message{
+        height: 8vh;
+    }
+    #pagination{
+        width: 58vw;
+    }
+    #pagination  button{
+        width: 8vw;
+    }
+    nav ul{
+        overflow-y: hidden;
+    }
+    #header nav a{
+        margin: -8px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    body {
+      background-color: green;
+    }
+    footer{
+        font-size: 13px;
+    }
+    .sign_log{
+        padding: 8px;
+    }
+    .buttons{
+        width: 19vw;
+    }
+    .notifications{
+        width: 74vw;
+    }
+    .notes {
+        width: 55vw;
+        height: 26vh;
+    }
+    .li{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 434px) {
+    .sign_log{
+        /* padding: 8px;
+        width: 7vw; */
+        height: 1vh;
+    }
+    ul{
+        font-size: 14px;
+    }
+    .li{
+        display: flex;
+        padding: 0;
+        width: 58px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon{
+        width: 8vw;
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: yellow;
+    }
+    nav ul{
+        font-size: 10px;
+    }
+    .li{
+        display: flex;
+        padding: 0;
+        width: 50px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign_log{
+        padding: 0px;
+    }
+    .icon{
+        font-size: 1rem;
+        width: 4vw;
+    }
+    .buttons{
+        width: 26vw;
+    }
+    footer{
+        font-size: 10px;
+    }
+    #message{
+        font-size: 15px;
+    }
+}

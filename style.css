@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Nunito:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f1e6d1;
+    overflow-x: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    font-family: 'Nunito';
+}
+/* DIV1 */
+
+#header_side_menu{
+    box-sizing: border-box;
+    /* position: absolute; */
+    border: 2px solid #f7f0f0;
+    height: 93vh;
+    width: 13vw;
+    background-color: black;
+    color: white;
+    border-radius: 0.4rem;
+    transition: width 0.3s ease-in;
+    padding: 1rem;
+}
+.note_title{
+    margin: 0.5rem;
+}
+
+/* DIV2 */
+#div2{
+    display: flex;
+    flex-direction: column;
+}
+/* NAVBAR */
+#navbar{
+    height: 6vh;
+    width: 100vw;
+}
+nav ul{
+    display: flex;
+    height: 6vh;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.li{
+    padding: 0 4rem;
+}
+#header_nav a{
+    text-decoration: none;
+    color: white;
+}
+.sign_log{
+    background-color: white;
+    color: black;
+    margin: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+}
+.sign_log:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+.icon{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 2vw;
+    padding: 2rem;
+}
+.icon i:hover{
+    cursor: grab;
+}
+
+/* Messages */
+#message{
+    box-sizing: border-box;
+    height: 6vh;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    font-family: monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+#message i:hover{
+    cursor: grab;
+}
+
+/* CONTAINER */
+#container{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+#container h1{
+    font-family: monospace;
+    font-size: 2.1rem;
+    margin: 1rem 0;
+    color: black;
+}
+.form{
+    height: inherit;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffe6b7;    
+    padding-bottom: 1rem;
+
+}
+.adding_notes_sec{
+    margin-top: 5rem;
+    font-family: 'Borel';
+}
+.inputs{
+    padding: 0.4rem 0;
+}
+.form input{
+    width: 16vw;
+    height: 2vh;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+}
+.buttons{
+    height: 4vh;
+    width: 6vw;
+    margin: 1rem 0;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    font-family: monospace;
+}
+
+.buttons:hover{
+    background-color: white;
+    color: black;
+    cursor: grab;
+}
+hr{
+    width: 79vw;
+    margin: 2rem;
+}
+
+.added_notes_sec{
+    /* border: 2px solid brown; */
+    background-color: #bbb82c0f;
+    width: 79vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.notes{
+    border: 2px solid black;
+    width: 13vw;
+    height: 34vh;
+    margin: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.notes h3{
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-family: "Nunito";
+    position: relative;
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+/* SIGN UP DIV */
+.popup{
+    width: 34vw;
+    height: 57vh;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px; 
+    transition: 1s;
+    z-index: 1;
+    background-color: #e2e2ff;
+    margin-top: 2rem;
+}
+.sign_up h1{
+    font-family: 'Nunito';
+    padding-bottom: 1rem;
+}
+.sign_up h5{
+    padding: 1rem;
+}
+.sign_up h5 a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.show_popup{
+    top: 50%;
+}
+
+.cross_icon{
+    box-sizing: border-box;
+    /* width: inherit; */
+    width: inherit;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    cursor: pointer;
+}
+.popup_contents{
+    /* border: 2px solid black; */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup_contents h5{
+    margin-top: 1rem;
+}
+
+.inputs{
+    padding: 1rem 0;
+}
+
+.inputs input{
+    width: 21vw;
+    height: 3vh;
+    border: 1px solid black;
+}
+.popup_btn button{
+    width: 6vw;
+    height: 5vh;
+    outline: none;
+    border: 2px solid #161616;
+    border-radius: 6px;
+    background-color: black;
+    color: #e2e2ff;
+    font-size: 15px;
+    font-family: 'Nunito';
+    margin-top: 1rem;
+    border: none;
+}
+.popup_btn button:hover{
+    background-color: #e2e2ff;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.click_here{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}
+
+/* PAGINATION */
+#pagination{
+    width: 27vw;
+    height: 7vh;
+    border-radius: 10px;
+    margin: 1rem 0;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pagination > *{
+    padding: 2px 0px;
+    border: none;
+    margin: 3px;
+    border-radius: 3px;
+}
+#pagination > a{
+    cursor: pointer;
+}
+#pagination button{
+    width: 2vw;
+    height: 4vh;
+}
+#pagination i{
+    padding: 11px;
+    cursor: pointer;
+}
+#pagination button a{
+    text-decoration: none;
+    color: black;
+}
+
+/* MORE DIV */
+.more_popup{
+    background: white;
+    width: 35vw;
+    height: 32vh;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.more_div_contents{
+    padding-left:  1rem;
+}
+.more_div_contents h1{
+    padding: 1rem 0;
+    text-decoration: underline;
+}
+
+
+.more_link{
+    color: blue;
+}
+
+/* Notifications */
+.notifications{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 31vw;
+    height: 23vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background: #f0e6d2;
+    font-weight: bold;
+}
+
+
+/* UTILITY CLASSES */
+.d_none{
+    display: none !important;
+}
+.color_red{
+    color: red;
+}
+.bg{
+    background-color: #fbfbfb;
+}
+.selected{
+    background-color: black;
+    /* background-color: #9595f5; */
+    color: white;
+    outline: 2px solid white;
+}
+.selected a{
+    color: white !important;
+}
+.green_alert{
+    background-color: green;
+}
+.red_alert{
+    background-color: red;
+}
+.yellow{
+    background-color: #ffc800;
+}
+.footer_position{
+    position: fixed;
+    bottom: 0;
+}
